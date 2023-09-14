@@ -1,0 +1,246 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+ */
+
+.container-fluid{
+    background-color: rgba(255, 0, 0, 0.10); 
+    /* font-size: larger; */
+    transition: background-color 0.3s ease;
+    /* font-weight: bolder; */
+}
+
+.nav-link{
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover{
+    text-decoration: underline 2px solid brown;
+}
+
+/* header img{
+    width: 60px;
+    height: 40px;
+    display: flex;
+    margin-right: 75%;
+} */
+
+/* .navbar-brand{
+    cursor: pointer;
+}
+
+.navbar-brand:hover{
+    color: yellow;
+    text-decoration: dotted 2px solid yellow;
+} */
+
+
+/* .carousel-item{ */
+    /* height: 100vh; */
+    /* position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+/* .carousel-item, .heading{
+    font-size: larger;
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+    width: 100%;
+    color: aliceblue;
+   
+} */
+
+/* .container{
+    background-color: rgba(0, 0, 0, 0.10);;
+     display: flex; 
+     justify-content: space-evenly; 
+     margin-top: 10px; 
+} */
+
+.card, .btn, .btn-secondary:hover{
+    text-decoration: underline;
+}
+
+.row{
+    text-align: center;
+}
+
+.main2{
+    background-image: url("img/background.jpg");
+    height: 100vh;
+    background-size: cover;
+    margin-top: 10px;
+    
+}
+
+.text-here{
+    background-color: rgba(212, 142, 51, 0.3);
+    height: 100%;
+    color: aliceblue;
+}
+
+.text-here h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 100px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+
+.text-here p{
+    font-size: 15px;
+    padding: 40px 80px;
+    font-style: italic;
+}
+
+
+/* review */
+
+.reviews, .headings{
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.rev-img{
+    width: 70px;
+    height: 70px;
+}
+
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+}
+
+.reviews-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.reviews-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.reviews-container .box p{
+    font-style: italic;
+}
+
+.reviews-container .box .stars .bx{
+    color: var(--main-color);
+}
+
+.container-fluid, .social-media{
+    /* direction: flex;
+    justify-content: center; */
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container-fluid, .copyright{
+    font-size: 10px;
+}
+
+
+@media(max-width: 1108px){
+    .text-here p{
+    font-size: 12px;
+    }
+}
+
+@media (max-width: 786px){
+    .text-here h2{
+        font-size: 30px;
+    }
+    .text-here p{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 581px){
+    .text-here p{
+        font-size: 11px;
+    }
+}
+
+
+@media(max-width: 523px){
+    .text-here p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 507px){
+    .text-here p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 466px){
+    .text-here p{
+    font-size: 9px;
+    }
+}
+
+@media (max-width: 401px){
+    .text-here p{
+        font-size: 8px;
+    }
+}
+
+@media( max-width: 359px){
+    .text-here p{
+        font-size: 7px;
+    }
+}
+
+@media(max-width: 311px){
+    .text-here p{
+        font-size: 6px;
+    }
+}
+
+@media(max-width: 271px){
+    .text-here p{
+        font-size: 5px;
+    }
+}
+
+
+
+
+
+
+
+

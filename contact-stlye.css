@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    background: rgb(220,219,219);
+    border-radius: 10px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.card{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card-icon{
+    font-size: 20px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.card-icon:hover{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.6);
+}
+
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p{
+    text-decoration: underline;
+    color: #ffbaad;
+}
+
+
+
+main{
+    border-radius: 6px;
+    background: linear-gradient(to right, #ece5e5, #908e8a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+.containers{
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+}
+
+.header{
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0ff;
+}
+
+
+.header h2{
+    margin: 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0ff;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control textarea{
+    border: 2px solid #f0f0ff;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c; 
+}
+
+.form-control.success textarea{
+    border-color: #2ecc71;
+}
+
+.form-control.error textarea{
+    border-color: #e74c3c; 
+}
+
+.form-control i{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-control.success i, .fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i, .fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+
+}
+
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+form button {
+    background-color: rgba(47, 53, 66, 0.5); /* Semi-transparent background color */
+    color: #f0f0ff; /* Text color */
+    border: none; /* Remove the border */
+    border-radius: 14px; /* Rounded corners */
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 90%;
+    margin: 10px;
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  form button:hover {
+    background-color: rgba(47, 53, 66, 0.7); /* Darker background color on hover */
+  }
+  
+
+#contact-us{
+    background: linear-gradient(to right, #fcfcfc, #2f3542);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.container-fluid, .social-media{
+    /* direction: flex;
+    justify-content: center; */
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.container-fluid, .copyright{
+    font-size: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+@media  screen and (max-width:243px) {
+    .card p{
+        font-size: 10px;
+    }
+}
+
+
+
